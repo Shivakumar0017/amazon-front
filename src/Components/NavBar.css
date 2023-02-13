@@ -1,0 +1,98 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    
+}
+.header .headerTop{
+    height: 50px;
+    background: black;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.header .logo{
+    width: 100px;
+    object-fit: cover;
+    margin: 18px 20px 0 20px;
+}
+
+.header .headerSearch{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+
+.header .searchInput{
+    width: 100%;
+    height: 37px;
+    padding: 10px;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.header .searchIcon{
+    background-color: #cd9042;
+    height: 37px !important;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.headerNavbar , .headerNavbar span{
+    display: flex;
+    justify-content: center;
+    text-decoration: none !important;
+}
+
+.link:first-child{
+    width: 100px;
+    font-weight: 600;
+}
+
+
+
+.link {
+    color: white;
+}
+
+.headerNavbar .options{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.option_one{
+    font-size: 12px !important;
+}
+
+.option_Two{
+    font-size: 14px !important;
+    font-weight: 800 !important;
+}
+
+.header .option_cart{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.header .cart_count{
+    border: 1px solid white;
+    font-size: 16px;
+    border-radius: 100px;
+    margin: 0 15px -2-px -10px;
+    padding: 2px 4px;
+}
+
+.link .option_cart{
+    align-items: center;
+    justify-content: center;
+}

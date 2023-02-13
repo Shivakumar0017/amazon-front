@@ -1,0 +1,17 @@
+.Electronics{
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.Products{
+    isolation: isolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prod1{
+    margin-left: 10px;
+    margin-right: 20px;
+}
