@@ -10,19 +10,19 @@ import "./ProductCard.css";
 import { CardActionArea } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const ProductCard = (props) => {
+const ProductCard = ({details}) => {
     return ( 
       <>
-      {props.details.map((value,index)=>(
+      
         <Link to="/productdetails" >
-        <Card sx={{ maxWidth: 345 ,maxheight: 600}} key={index} className="box">
+        <Card sx={{ Width: 345 ,height: 500}}  className="box">
       <CardActionArea>
 
         <CardMedia sx={{height: 300,position: "cover"}}
           component="img"
           alt="img"
           height="150"
-          image={value.img}
+          image={details.img}
           //   component={this.props.component}
           //   alt={this.props.alt}
           //   height={this.props.height}
@@ -30,10 +30,10 @@ const ProductCard = (props) => {
           />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {value.title}
+            {details.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Rs.{value.price}
+            Rs.{details.price}
           </Typography>
         </CardContent>
         <CardActions>
@@ -45,7 +45,7 @@ const ProductCard = (props) => {
         </CardActionArea>
       </Card>
           </Link>
-          ))}
+          
           </>
        );
       }
